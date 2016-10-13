@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<root>
+  <devicevendordef>
+        <vendorname>Jasin identifier</vendorname>
+        <vendorid>0x1818</vendorid>
+    </devicevendordef>
+    <item>
+      <name>自定义</name>
+    <item>
+      <appendix>用 HOME 代替 Command+Right</appendix>
+      <identifier>private.home_to_command_and_left</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::HOME,
+        KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L
+      </autogen>
+    </item>
+    <item>
+      <appendix>用 End 代替 Command+Right</appendix>
+      <identifier>private.end_to_command_and_right</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::END,
+        KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L
+      </autogen>
+    </item>
+    <item>
+      <appendix>用 Menu 代替 fn </appendix>
+      <identifier>private.menu_to_fn</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::PC_APPLICATION,
+        KeyCode::FN
+      </autogen>
+    </item>
+    <item>
+      <appendix>用 PrintScreen 代替 Ctrl+Command+Shift+4</appendix>
+      <identifier>private.printscreen_to_ctrl_and_command_and_shift_and_4</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::F13,
+        KeyCode::KEY_4,
+        ModifierFlag::CONTROL_L,
+        ModifierFlag::SHIFT_L,
+        ModifierFlag::COMMAND_L
+      </autogen>
+    </item>
+    <item>
+      <appendix>将小键盘的 Enter 映射到大 Enter 中</appendix>
+      <identifier>private.enter_to_return</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::ENTER,
+        KeyCode::RETURN
+      </autogen>
+    </item>
+    <item>
+      <appendix>用 F5 代替 Command + R</appendix>
+      <identifier>private.f5_to_command_and_r</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::F5,
+        KeyCode::R,
+        ModifierFlag::COMMAND_L
+      </autogen>
+    </item>
+    <item>
+      <appendix>用 F6 代替 Command + L</appendix>
+      <identifier>private.f12_to_command_and_l</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::F6,
+        KeyCode::L,
+        ModifierFlag::COMMAND_L
+      </autogen>
+    </item>
+    <item>
+      <appendix>用 F12 代替 Command + Alt + I</appendix>
+      <identifier>private.f12_to_command_and_alt_and_i</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::F12,
+        KeyCode::I,
+        ModifierFlag::COMMAND_L,
+        ModifierFlag::OPTION_L
+      </autogen>
+    </item>
+    <item>
+      <appendix>用 Command_R 代替 Launchpad </appendix>
+      <identifier>private.command_r_to_lauchpad</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::COMMAND_R,
+        KeyCode::LAUNCHPAD
+      </autogen>
+    </item>
+    <item>
+      <appendix>用 Option + Tab 代替 Ctrl + Left</appendix>
+      <identifier>private.alt_and_tab_to_ctrl_and_left</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::TAB,
+        ModifierFlag::OPTION_L,
+        KeyCode::CURSOR_LEFT,
+        ModifierFlag::CONTROL_R
+      </autogen>
+    </item>
+    <item>
+      <appendix>用 Option + Q 代替 Ctrl + Right</appendix>
+      <identifier>private.alt_and_q_to_ctrl_and_right</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::Q,
+        ModifierFlag::OPTION_L,
+        KeyCode::CURSOR_RIGHT,
+        ModifierFlag::CONTROL_R
+      </autogen>
+    </item>
+    <item>
+      <appendix>用 Ctrl + HJKL 代替 左上下右</appendix>
+      <identifier>private.ctrl_and_hjkl_to_left_up_down_right</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::H,
+        ModifierFlag::CONTROL_L,
+        KeyCode::CURSOR_LEFT
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::J,
+        ModifierFlag::CONTROL_L,
+        KeyCode::CURSOR_DOWN
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::K,
+        ModifierFlag::CONTROL_L,
+        KeyCode::CURSOR_UP
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::L,
+        ModifierFlag::CONTROL_L,
+        KeyCode::CURSOR_RIGHT
+      </autogen>
+    </item>
+    <item>
+      <appendix>用 F14、F15 去代替音量上升和下降</appendix>
+      <identifier>private.f14_f15_to_volumn</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::F14,
+        KeyCode::RawValue::0x1
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::F15,
+        KeyCode::RawValue::0x0
+      </autogen>
+    </item>
+    </item>
+</root>
+<root>
+  <devicevendordef>
+        <vendorname>Mac Keyboard</vendorname>
+        <vendorid>0x0259</vendorid>
+    </devicevendordef>
+    <item>
+      <appendix>用 Ctrl + HJKL 代替 左上下右</appendix>
+      <identifier>private.mac_ctrl_and_hjkl_to_left_up_down_right</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::H,
+        ModifierFlag::CONTROL_L,
+        KeyCode::CURSOR_LEFT
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::J,
+        ModifierFlag::CONTROL_L,
+        KeyCode::CURSOR_DOWN
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::K,
+        ModifierFlag::CONTROL_L,
+        KeyCode::CURSOR_UP
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::L,
+        ModifierFlag::CONTROL_L,
+        KeyCode::CURSOR_RIGHT
+      </autogen>
+    </item>
+</root>
